@@ -1,0 +1,37 @@
+.side_drawer{
+    height:100%;
+    background-image: linear-gradient(#00001a, #000);
+    top: 0;
+    position: fixed;
+    left:0;
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    z-index: 200;
+    opacity: .9;
+    transform:translateX(-100%);
+    transition:transform 0.3s ease-out;
+}
+.side_drawer.open{
+    transform: translateX(0);
+}
+.side_drawer li{
+    margin: 0.5rem 0;
+}
+.side_drawer ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.side_drawer a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+@media (min-width:918px){
+    .side_drawer{
+        display: none;
+    }
+}
